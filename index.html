@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHINEDU JOSEPH OGWU | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Your Name.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main">
+    
+    <a href="index.html" class="brand">CJ0</a>
+    <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul id="menu" class="nav-list">
+      <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
+      <li><a class="nav-link" href="about.html" >About</a></li>
+      <li><a class="nav-link" href="projects.html" >Projects</a></li>
+      <li><a class="nav-link" href="contact.html" >Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="hero mx-auto max-w-4xl px-6 text-center">
+  
+  <div class="portrait">
+    <div class="portrait-inner" data-initials="CJO">
+      <img src="/images/CHINEDUJOSEPHOGWUPORTRAIT.jpeg" alt="Portrait of Chinedu Joseph Ogwu" onerror="this.remove()">
+    </div>
+  </div>
+  <h1 class="hero-name silver-text">CHINEDU JOSEPH OGWU</h1>
+  <p class="hero-role">Law graduate, Full-stack Web Developer.</p>
+  <p class="mx-auto mt-4 max-w-xl text-silver-dim">I build websites, web apps and apps for individuals, SMEs and corporate bodies.</p>
+  <div class="mt-8 flex flex-wrap justify-center gap-4">
+    <a href="projects.html" class="btn btn-primary">See my projects</a>
+    <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+  </div>
+</section>
+
+<section class="section mx-auto max-w-6xl px-6">
+  
+  <div class="grid gap-6 md:grid-cols-3">
+    <a href="about.html" class="card"><h2 class="card-title">About</h2><p>Who I am, what I know and where I have worked.</p></a>
+    <a href="projects.html" class="card"><h2 class="card-title">Projects</h2><p>Selected work with notes on what I made and why.</p></a>
+    <a href="contact.html" class="card"><h2 class="card-title">Contact</h2><p>Send a message or find me online.</p></a>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+    <p>&copy; <span id="year"></span> CHINEDU JOSEPH OGWU. All rights reserved.</p>
+
+    <p class="flex gap-5"><a href="#">Email</a><a href="#">LinkedIn</a><a href="#">Facebook</a></p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

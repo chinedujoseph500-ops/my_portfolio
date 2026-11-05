@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | CHINEDU JOSEPH OGWU</title>
+  <meta name="description" content="About Your Name.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main">
+      <!-- CUSTOMIZE: your initials or short name -->
+      <a href="index.html" class="brand">CJO</a>
+      <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="menu"
+        aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul id="menu" class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html" aria-current="page">About</a></li>
+        <li><a class="nav-link" href="projects.html">Projects</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section mx-auto max-w-6xl px-6">
+      <div class="grid items-start gap-12 md:grid-cols-[auto_1fr]">
+        <div class="portrait portrait-sm">
+          <div class="portrait-inner" data-initials="CJO"><img src="/images/CHINEDUJOSEPHOGWUPORTRAIT.jpeg"
+              alt="Portrait of CHINEDU JOSEPH OGWU" onerror="this.remove()"></div>
+        </div>
+        <div>
+          <h1 class="page-title silver-text">About me</h1>
+          <!-- CUSTOMIZE: your story -->
+          <p class="prose-line">I'm a detailed, goal-driven, problem solver with a penchant for the law and technology.
+          </p>
+          <p class="prose-line">My work is driven by the need to offer valuable tech-related solutions to problems,
+            bringing the ideas of my clients to life. I'm currently acquiring skills that cut across various areas
+            within the tech industry.</p>
+          <a href="/files/OGWU_CHINEDU_JOSEPH_CV.pdf" class="btn btn-ghost mt-4">Download my CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mx-auto max-w-6xl px-6">
+      <h2 class="section-title">Skills</h2>
+      <!-- CUSTOMIZE: one chip per skill -->
+      <ul class="flex flex-wrap gap-3">
+        <li class="chip">HTML</li>
+        <li class="chip">CSS</li>
+        <li class="chip">Tailwind</li>
+        <li class="chip">JavaScript</li>
+        <li class="chip">Python</li>
+      </ul>
+    </section>
+
+    <section class="section mx-auto max-w-6xl px-6">
+      <h2 class="section-title">Experience</h2>
+
+      <ol class="timeline">
+        <li>
+          <p class="when">2023 to now</p>
+          <h3>Legal Secretary, Extern, Legal Clues Law House</h3>
+          <p>Draft agreements and other legal documents, Convert court process manuscripts into properly formatted
+            documents, Attend court sessions and observe proceedings, Support the day-to-day administrative and document
+            needs of the chambers
+          </p>
+        </li>
+
+        <li>
+          <p class="when">2017 to now</p>
+          <h3>Inventory and Sales Records Assistant, ODINICHI HAIRS</h3>
+          <p>Maintained inventory records for hair products and accessories, Tracked sales and kept accurate records of
+            transactions
+          </p>
+        </li>
+
+        <li>
+          <p class="when">2021 to 2025</p>
+          <h3>Bachelor of Laws, Rivers State University</h3>
+          <p></p>
+        </li>
+      </ol>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
+      <p>&copy; <span id="year"></span> CHINEDU JOSEPH OGWU. All rights reserved.</p>
+
+      <p class="flex gap-5"><a href="#">Email</a><a href="#">LinkedIn</a><a href="#">Facebook</a></p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
