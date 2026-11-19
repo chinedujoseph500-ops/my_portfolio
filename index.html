@@ -5,60 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CHINEDU JOSEPH OGWU | Portfolio</title>
   <meta name="description" content="Personal portfolio of CHINEDU JOSEPH OGWU.">
+  <link rel="icon" href="/images/logo.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="js/tailwind-config.js"></script>
   <link rel="stylesheet" href="/styles.css">
+  
+  <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <header class="site-header">
-  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-3" aria-label="Main">
     
-    <a href="index.html" class="brand">CJ0</a>
-    <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Menu"><span></span><span></span><span></span></button>
+    <a href="index.html" class="brand" aria-label="Chinedu Joseph Ogwu - home">
+      <img src="/images/logo.svg" alt="CJO logo" class="brand-logo" width="44" height="44">
+    </a>
+    <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
     <ul id="menu" class="nav-list">
       <li><a class="nav-link" href="index.html" aria-current="page">Home</a></li>
-      <li><a class="nav-link" href="about.html" >About</a></li>
-      <li><a class="nav-link" href="projects.html" >Projects</a></li>
-      <li><a class="nav-link" href="contact.html" >Contact</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="projects.html">Projects</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
     </ul>
   </nav>
 </header>
+
 <main>
-<section class="hero mx-auto max-w-4xl px-6 text-center">
-  
-  <div class="portrait">
-    <div class="portrait-inner" data-initials="CJO">
-      <img src="/images/CHINEDUJOSEPHOGWUPORTRAIT.jpeg" alt="Portrait of Chinedu Joseph Ogwu" onerror="this.remove()">
+
+<div class="hero-wrap">
+  <canvas id="stars" class="hero-canvas" aria-hidden="true"></canvas>
+  <section class="hero mx-auto max-w-4xl px-6 text-center">
+
+    <div class="portrait rise" id="portrait">
+      <div class="portrait-inner" data-initials="CJO">
+        <img src="/images/CHINEDUJOSEPHOGWUPORTRAIT.jpeg" alt="Portrait of Chinedu Joseph Ogwu" onerror="this.remove()">
+      </div>
     </div>
-  </div>
-  <h1 class="hero-name silver-text">CHINEDU JOSEPH OGWU</h1>
-  <p class="hero-role">Law graduate, Full-stack Web Developer.</p>
-  <p class="mx-auto mt-4 max-w-xl text-silver-dim">I build websites, web apps and apps for individuals, SMEs and corporate bodies.</p>
-  <div class="mt-8 flex flex-wrap justify-center gap-4">
-    <a href="projects.html" class="btn btn-primary">See my projects</a>
-    <a href="contact.html" class="btn btn-ghost">Get in touch</a>
-  </div>
-</section>
+
+    <h1 class="hero-name silver-text rise" style="--d:.15s">CHINEDU JOSEPH OGWU</h1>
+
+    <!-- The part after "Law graduate," types itself. Edit the words (split with |) in data-words -->
+    <p class="hero-role rise" style="--d:.3s">Law graduate, <span id="typed" data-words="Full-stack Web Developer.|Detail-driven problem solver.|Lover of law and technology.">Full-stack Web Developer.</span><span class="caret" aria-hidden="true"></span></p>
+
+    <p class="mx-auto mt-4 max-w-xl text-silver-dim rise" style="--d:.45s">I build websites, web apps and apps for individuals, SMEs and corporate bodies.</p>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-4 rise" style="--d:.6s">
+      <a href="projects.html" class="btn btn-primary">See my projects</a>
+      <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+</div>
 
 <section class="section mx-auto max-w-6xl px-6">
-  
   <div class="grid gap-6 md:grid-cols-3">
-    <a href="about.html" class="card"><h2 class="card-title">About</h2><p>Who I am, what I know and where I have worked.</p></a>
-    <a href="projects.html" class="card"><h2 class="card-title">Projects</h2><p>Selected work with notes on what I made and why.</p></a>
-    <a href="contact.html" class="card"><h2 class="card-title">Contact</h2><p>Send a message or find me online.</p></a>
+    <a href="about.html" class="card reveal"><h2 class="card-title">About</h2><p>Who I am, what I know and where I have worked.</p></a>
+    <a href="projects.html" class="card reveal"><h2 class="card-title">Projects</h2><p>Selected work with notes on what I made and why.</p></a>
+    <a href="contact.html" class="card reveal"><h2 class="card-title">Contact</h2><p>Send a message or find me online.</p></a>
   </div>
 </section>
 </main>
-<footer class="site-footer">
-  <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 sm:flex-row sm:items-center sm:justify-between">
-    <p>&copy; <span id="year"></span> CHINEDU JOSEPH OGWU. All rights reserved.</p>
 
-    <p class="flex gap-5"><a href="#">Email</a><a href="#">LinkedIn</a><a href="#">Github</a></p>
+<footer class="site-footer">
+  <div class="mx-auto flex max-w-6xl flex-col gap-5 px-6 py-8 lg:flex-row lg:items-center lg:justify-between">
+    <p>&copy; <span id="year"></span> CHINEDU JOSEPH OGWU. All rights reserved.</p>
+    
+    <ul class="social">
+      <li><a href="mailto:chinedujoseph500@gmail.com">Email</a></li>
+      <li><a href="tel:+2348085669045">Phone</a></li>
+      <li><a href="https://github.com/chinedujoseph500-ops" target="_blank" rel="noopener">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/chinedu-joseph-ogwu" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://web.facebook.com/joseph.ogwu.2025" target="_blank" rel="noopener">Facebook</a></li>
+      <li><a href="https://www.instagram.com/chi.joe_" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
   </div>
 </footer>
+
 <script src="js/main.js"></script>
 </body>
 </html>
